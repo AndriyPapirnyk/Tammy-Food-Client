@@ -1,0 +1,23 @@
+@import '../../../mixins/mixins.scss';
+
+.header{
+    @include block(100px);
+    position: fixed;
+    top: 0;
+    transition: .3s;
+    z-index: 2;
+    &__container{
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        color: #3C3C3C;
+        // font-size: 32px;
+        font-size: clamp(18px,5vw,32px);
+        font-weight: 700;
+        line-height: normal;
+        span{
+            color: #FCC647;
+        }
+    }
+}

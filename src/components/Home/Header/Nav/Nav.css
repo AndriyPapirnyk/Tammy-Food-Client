@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__burger {
+  width: 35px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .nav__burger {
+    display: none;
+  }
+}
+.nav ul {
+  display: flex;
+  gap: 50px;
+}
+.nav ul img {
+  cursor: pointer;
+}
+.nav ul li {
+  color: #3C3C3C;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .nav ul li {
+    display: none;
+  }
+}
+.nav ul li:hover {
+  color: #FCC647;
+  text-decoration: underline;
+  transition: 0.3s;
+}

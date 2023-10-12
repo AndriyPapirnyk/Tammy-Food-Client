@@ -1,0 +1,14 @@
+@import '../../mixins/mixins.scss';
+
+.footer{
+    @include block(100px);
+    background-color: #3C3C3C;
+    &__container{
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

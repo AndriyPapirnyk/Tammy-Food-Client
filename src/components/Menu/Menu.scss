@@ -1,0 +1,32 @@
+@import '../../mixins/mixins.scss';
+
+.menu{
+    @include block(auto);
+    &__container{
+        flex-direction: column;
+        padding: 80px 0;
+    }
+    &__heading{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            color: #3C3C3C;
+            // font-size: 36px;
+            font-size: clamp(22px,7vw,36px);
+            font-weight: 700;
+            line-height: normal;
+        }
+        p{
+            color: #667085;
+            // font-size: 14px;
+            font-size: clamp(10px,2.5vw,16px);
+            font-weight: 400;
+            line-height: 27px;
+            @media screen and (max-width: 500px) {
+                line-height: 23px;
+            }
+        }
+    }
+}

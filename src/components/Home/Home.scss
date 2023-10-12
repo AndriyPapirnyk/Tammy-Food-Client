@@ -1,0 +1,80 @@
+@import '../../mixins/mixins.scss';
+
+.home{
+    @include block(785px);
+    justify-content: center;
+    position: relative;
+    background-color: #FFFBF3;
+    @media screen and (max-width: 720px) {
+        height: 100vh;
+    }
+    &__container{
+        align-items: center;
+        position: relative;
+    }
+    &__main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        img{
+            @media screen and (max-width: 1080px) {
+                display: none;
+            }
+        }
+        &-main{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @media screen and (max-width: 1080px) {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+            div{
+                width: 145px;
+                height: 40px;
+                border-radius: 7px;
+                background-color: #FFF2D4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #F4B41B;
+                font-weight: 600;
+            }
+            h1{
+                color: #3C3C3C;
+                // font-size: 48px;
+                font-size: clamp(22px,7vw,48px);
+                font-weight: 700;
+                line-height: normal;
+                span{
+                    color: #FFC12F;
+                }
+            }
+            p{
+                color: #667085;
+                // font-size: 16px;
+                font-size: clamp(10px,2.5vw,16px);
+                font-weight: 400;
+                line-height: 32px; 
+                @media screen and (max-width: 500px) {
+                    line-height: 23px;
+                }
+            }
+            button{
+                width: 145px;
+                height: 50px;
+                background-color: #FFC12F;
+                color: #fff;
+                border-radius: 6px;
+                @media screen and (max-width: 540px) {
+                    width: 125px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
